@@ -4,7 +4,7 @@ from typing import List
 def points_cover(segments: List[List[int]]) -> List[int]:
     sorted_segments: List[List[int]] = sorted(segments, key=lambda x: x[1])
     last: int = -1
-    result: list = []
+    result: List = []
     for left, right in sorted_segments:
         if last < left:
             last = right
